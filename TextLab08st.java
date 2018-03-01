@@ -35,6 +35,10 @@ class FullName
 
 	public String lastNameFirst()
 	{
+		String space = " ";
+		int index = name.lastIndexOf(space);
+		return name.substring(index) + ", " + name.substring(0, index);
+	
 		/*
 		 *  80 point precondition: The entered name consists of a First Name and a Last Name seprated by a single space.
 		 *
@@ -50,4 +54,3 @@ class FullName
 
 	}
 }
-
